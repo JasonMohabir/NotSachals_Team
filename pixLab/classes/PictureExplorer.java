@@ -22,7 +22,7 @@ public class PictureExplorer implements MouseMotionListener, ActionListener, Mou
  
   // current indicies
   /** row index */
-  private int rowIndex = 0; 
+  private int rowIndex = 0;
   /** column index */
   private int colIndex = 0;
   
@@ -800,8 +800,12 @@ public class PictureExplorer implements MouseMotionListener, ActionListener, Mou
    */
   public static void main( String args[])
   {
-    Picture pix = new Picture(args[0]);
+    Picture pix = new Picture("flower2.jpg");
+    //Picture smallP = pix.scale(0.25, 0.25);
+    //smallP.write("smallkai.jpg");
     pix.explore();
+    
+    //Picture p = new SimplePicture();       
   }
   
 }
